@@ -1,14 +1,14 @@
 specVersion: 0.0.1
 description: TicketSale Graph
-repository: https://github.com/graphprotocol/example-subgraph
+repository: https://github.com/MikaelLazarev/Ticket-Graph
 schema:
   file: ./schema.graphql
 dataSources:  
   - kind: ethereum/contract
     name: TicketSale
-    network: mainnet
+    network: ropsten
     source:
-      address: '0x5b4B82F36afdc7034e977f94c0D06800F5196b27'
+      address: '0x748e268d1617CEfB7eE72C6BeE11Ba4e24c68658'
       abi: TicketSale
     mapping:
       kind: ethereum/events

@@ -1,12 +1,12 @@
 .footer {
-    #position: fixed;
+    position: fixed;
     left: 0;
     bottom: 0;
     width: 100%;
-    background-color: rgba(113, 110, 112, 0.75);
+    background-color: rgba(35, 75, 126, 0.75);
     color: #FFFFFF;
     padding-top: 10px;
-    height: 100px;
+    height: 50px;
 }
 
 .footer ul li a  {

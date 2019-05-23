@@ -16,7 +16,6 @@ class FormikForm extends Component {
     render() {
 
         console.log("[FOFORM]: FormikForm Component: Props: ", this.props);
-        if (this.state.redirect) return <Redirect to={this.props.onSuccessLink}/>;
 
         const schemaPrep = {};
         Object.entries(this.props.fieldList).map(x => schemaPrep[x[0]] = x[1].validation);
