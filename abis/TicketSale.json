@@ -1,0 +1,209 @@
+[
+  {
+    "constant": true,
+    "inputs": [
+      {
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "name": "tickets",
+    "outputs": [
+      {
+        "name": "title",
+        "type": "string"
+      },
+      {
+        "name": "location",
+        "type": "string"
+      },
+      {
+        "name": "date",
+        "type": "uint256"
+      },
+      {
+        "name": "imageUrl",
+        "type": "string"
+      },
+      {
+        "name": "price",
+        "type": "uint32"
+      },
+      {
+        "name": "qty",
+        "type": "uint32"
+      },
+      {
+        "name": "owner",
+        "type": "address"
+      }
+    ],
+    "payable": false,
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "name": "id",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "name": "title",
+        "type": "string"
+      },
+      {
+        "indexed": false,
+        "name": "location",
+        "type": "string"
+      },
+      {
+        "indexed": false,
+        "name": "date",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "name": "imageUrl",
+        "type": "string"
+      },
+      {
+        "indexed": false,
+        "name": "price",
+        "type": "uint32"
+      },
+      {
+        "indexed": false,
+        "name": "qty",
+        "type": "uint32"
+      },
+      {
+        "indexed": false,
+        "name": "owner",
+        "type": "address"
+      }
+    ],
+    "name": "NewEventRegistered",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "name": "id",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "name": "title",
+        "type": "string"
+      },
+      {
+        "indexed": false,
+        "name": "location",
+        "type": "string"
+      },
+      {
+        "indexed": false,
+        "name": "date",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "name": "imageUrl",
+        "type": "string"
+      },
+      {
+        "indexed": false,
+        "name": "price",
+        "type": "uint32"
+      },
+      {
+        "indexed": false,
+        "name": "qty",
+        "type": "uint32"
+      },
+      {
+        "indexed": false,
+        "name": "owner",
+        "type": "address"
+      }
+    ],
+    "name": "UpdateEvent",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "name": "id",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "name": "event_id",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "name": "buyer",
+        "type": "address"
+      }
+    ],
+    "name": "TicketRegistered",
+    "type": "event"
+  },
+  {
+    "constant": false,
+    "inputs": [
+      {
+        "name": "_title",
+        "type": "string"
+      },
+      {
+        "name": "_location",
+        "type": "string"
+      },
+      {
+        "name": "_date",
+        "type": "uint256"
+      },
+      {
+        "name": "_imageUrl",
+        "type": "string"
+      },
+      {
+        "name": "_price",
+        "type": "uint32"
+      },
+      {
+        "name": "_qty",
+        "type": "uint32"
+      }
+    ],
+    "name": "postEvent",
+    "outputs": [],
+    "payable": false,
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "constant": false,
+    "inputs": [
+      {
+        "name": "event_id",
+        "type": "uint256"
+      }
+    ],
+    "name": "buyTicket",
+    "outputs": [],
+    "payable": true,
+    "stateMutability": "payable",
+    "type": "function"
+  }
+]

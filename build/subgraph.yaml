@@ -1,9 +1,9 @@
 specVersion: 0.0.1
-description: TicketSale Graph
-repository: https://github.com/graphprotocol/example-subgraph
+description: TicketSale GraphQL
+repository: 'https://github.com/graphprotocol/example-subgraph'
 schema:
-  file: ./schema.graphql
-dataSources:  
+  file: schema.graphql
+dataSources:
   - kind: ethereum/contract
     name: TicketSale
     network: mainnet
@@ -19,14 +19,14 @@ dataSources:
         - Ticket
       abis:
         - name: TicketSale
-          file: ./abis/TicketSale.json
+          file: TicketSale/abis/TicketSale.json
       eventHandlers:
-        - event: 'NewEventRegistered(uint256,string,string,uint256,string,uint32,uint32,address)'
+        - event: >-
+            NewEventRegistered(uint256,string,string,uint256,string,uint32,uint32,address)
           handler: handleNewEventRegistered
-
-        - event: 'UpdateEvent(uint256,string,string,uint256,string,uint32,uint32,address)'
+        - event: >-
+            UpdateEvent(uint256,string,string,uint256,string,uint32,uint32,address)
           handler: handleUpdateEvent
-
         - event: 'TicketRegistered(uint256,uint256,address)'
           handler: handleTicketRegistered
-      file: ./src/mapping.ts
+      file: TicketSale/TicketSale.wasm

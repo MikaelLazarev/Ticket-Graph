@@ -1,0 +1,23 @@
+.footer {
+    #position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: rgba(113, 110, 112, 0.75);
+    color: #FFFFFF;
+    padding-top: 10px;
+    height: 100px;
+}
+
+.footer ul li a  {
+    color: #121D30;
+}
+
+.footer ul li a:active {
+    color: #000000;
+}
+
+.footer ul li a:hover {
+    color: #343434;
+    cursor: pointer;
+}

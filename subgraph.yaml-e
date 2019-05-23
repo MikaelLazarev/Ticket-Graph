@@ -1,0 +1,47 @@
+specVersion: 0.0.1
+description: Gravatar for Ethereum
+repository: https://github.com/graphprotocol/example-subgraph
+schema:
+  file: ./schema.graphql
+dataSources:
+  - kind: ethereum/contract
+    name: Gravity
+    network: mainnet
+    source:
+      address: '0x40AEEdF826996C81BA90d65f7C69355948c16450'
+      abi: Gravity
+    mapping:
+      kind: ethereum/events
+      apiVersion: 0.0.2
+      language: wasm/assemblyscript
+      entities:
+        - Gravatar
+      abis:
+        - name: Gravity
+          file: ./abis/Gravity.json
+      eventHandlers:
+        - event: NewGravatar(uint256,address,string,string)
+          handler: handleNewGravatar
+        - event: UpdatedGravatar(uint256,address,string,string)
+          handler: handleUpdatedGravatar
+      file: ./src/mapping.ts
+
+  - kind: ethereum/contract
+    name: Board
+    network: mainnet
+    source:
+      address: '0x40AEEdF826996C81BA90d65f7C69355948c16450'
+      abi: Board
+    mapping:
+      kind: ethereum/events
+      apiVersion: 0.0.2
+      language: wasm/assemblyscript
+      entities:
+        - Advertisement
+      abis:
+        - name: Board
+          file: ./abis/Board.json
+      eventHandlers:
+        - event: 'NewAdvertisement(uint256,address,string,string,uint32,bool)'
+          handler: handleNewGravatar
+      file: ./src/mapping_board.ts
