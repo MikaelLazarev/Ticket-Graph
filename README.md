@@ -18,6 +18,8 @@ User story:
 
 The Graph API provides great opportunity to integrate decentralized systems with IoT devices and as result create new business models.
 
+<img width="1438" alt="Screenshot 2019-05-24 at 02 07 09" src="https://user-images.githubusercontent.com/26343374/58305695-ab913c80-7e01-11e9-9ead-c5f66e2984c2.png">
+
 ## Schema
 Two schemas are used in this project: Ticket event
 
