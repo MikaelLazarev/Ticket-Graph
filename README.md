@@ -81,13 +81,13 @@ Working version is on https://ticket-graph.herokuapp.com/ (it could take up to 3
 
 ### Future development
 
-1. Finish searching bar for events
-2. Provide function to withdraw money for organisers
-3. Provide multiple ticket buying by one operation
-4. Add automated testing for smartcontract
-5. Add ratings to organisers
-6. Develop recommendation system based on The Graph technology which organisers are trusted ones
-7. Add addtional fields like genre and etc. 
-8. Add a featture to publish description and other info to IPFS.
+- [ ] Finish searching bar for events
+- [ ] Provide function to withdraw money for organisers
+- [ ] Provide multiple ticket buying by one operation
+- [ ] Add automated testing for smartcontract
+- [ ] Add ratings to organisers
+- [ ] Develop recommendation system based on The Graph technology which organisers are trusted ones
+- [ ] Add addtional fields like genre and etc. 
+- [ ] Add a featture to publish description and other info to IPFS.
 
 Thanks for Graph & CoinList for this opportunity!
