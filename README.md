@@ -23,6 +23,9 @@ The Graph API provides great opportunity to integrate decentralized systems with
 
 Smartcontract for this project is very simplified. It has 2 methods only:
 
+postEvent(string memory _title, string memory _location, uint256 _date, string memory _imageUrl, uint32 _price, uint32 _qty) public  - Post new event and provide all info
+
+function buyTicket(uint event_id) public payable - Buy tickets by sending money to smartcontract and event id.
 
 ## Data schema
 To syncronize whole data between smartcontract data & end users via The Graph two @entities were created. TicketEvent is collcted all information about events and avaible tickets, Ticket schema is used to store information about users who bought tickets.
@@ -68,8 +71,13 @@ Working version is on https://ticket-graph.herokuapp.com/ (it could take up to 3
 
 ### Future development
 
-1. Finish searcning bar for events
+1. Finish searching bar for events
 2. Provide function to withdraw money for organisers
-3. Add automated testing for smartcontract
+3. Provide multiple ticket buying by one operation
+4. Add automated testing for smartcontract
+5. Add ratings to organisers
+6. Develop recommendation system based on The Graph technology which organisers are trusted ones
+7. Add addtional fields like genre and etc. 
+8. Add a featture to publish description and other info to IPFS.
 
 Thanks for Graph & CoinList for this opportunity!
