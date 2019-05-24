@@ -5,7 +5,7 @@ Please, check running version at https://ticket-graph.herokuapp.com/ (it could t
 ## Idea
 The core idea of this project is to show decentralized service where Ticket Graph users could buy tickets and event organizers could sell them. When user buys ticket his/her Ethereum address appears in the list of participants and if user has installed Ethereum wallet in mobile devices noting more to enter needed.
 
-## User storyv
+## User story
 
 User story: 
 1. Julia as a professional event organiser posted an event to system Graph Tickets about her Jazz concert, setting up location, date, price and quantity of tickets. 
@@ -21,6 +21,7 @@ Two schemas are used in this project: Ticket event
 
 ### TicketEvent
 
+```
 type TicketEvent @entity {
   id: ID!
   title: String!
@@ -32,14 +33,15 @@ type TicketEvent @entity {
   owner: Bytes!
   
 }
-
+```
 ### Ticket
-
+```
 type Ticket @entity {
   id: ID!
   event_id: Int!
   buyer: Bytes!
 }
+```
 
 ## How Graph is utilized in this project
 The Graph is a API gate to ticket system. With simple addding 
