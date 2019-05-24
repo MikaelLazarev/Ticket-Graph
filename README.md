@@ -1,6 +1,6 @@
 # Ticket-Graph
 Decentralized tickets sale system
-Please, check running version at https://ticket-graph.herokuapp.com/
+Please, check running version at https://ticket-graph.herokuapp.com/ (it could take up to 30 seconds sometimes cause project deployed on free heroku dyno)
 
 ## Idea
 The core idea of this project is to show decentralized service where Ticket Graph users could buy tickets and event organizers could sell them. When user buys ticket his/her Ethereum address appears in the list of participants and if user has installed Ethereum wallet in mobile devices noting more to enter needed.
@@ -47,5 +47,6 @@ The Graph is a API gate to ticket system. With simple addding
 ### What was done during hackathon
 This project was created during hackathon from scratch including idea generation, smart contract and front end application development.
 
+System works corretly. To test it, please user Ropsten network.
 
 
