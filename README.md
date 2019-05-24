@@ -23,9 +23,14 @@ The Graph API provides great opportunity to integrate decentralized systems with
 
 Smartcontract for this project is very simplified. It has 2 methods only:
 
-postEvent(string memory _title, string memory _location, uint256 _date, string memory _imageUrl, uint32 _price, uint32 _qty) public  - Post new event and provide all info
-
-function buyTicket(uint event_id) public payable - Buy tickets by sending money to smartcontract and event id.
+Post new event and provide all info:
+```
+postEvent(string memory _title, string memory _location, uint256 _date, string memory _imageUrl, uint32 _price, uint32 _qty) public
+```
+Buy tickets by sending money to smartcontract and event id.
+```
+function buyTicket(uint event_id) public payable
+```
 
 ## Data schema
 To syncronize whole data between smartcontract data & end users via The Graph two @entities were created. TicketEvent is collcted all information about events and avaible tickets, Ticket schema is used to store information about users who bought tickets.
