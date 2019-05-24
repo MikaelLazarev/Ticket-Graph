@@ -1,9 +1,8 @@
 # Ticket-Graph
 ##### Decentralized tickets sale system
 
-Live Demo: https://ticket-graph.herokuapp.com/ 
-
-*it could take up to 30 seconds sometimes cause project deployed on free heroku dyno*
+Live Demo: https://ticket-graph.herokuapp.com/  
+*it could take up to 30 seconds sometimes cause project is deployed on free heroku dyno*
 
 Video: https://youtu.be/06e79YXQdKA
 
