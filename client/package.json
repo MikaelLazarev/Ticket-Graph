@@ -59,7 +59,7 @@
     "react-bootstrap-table-next": "^2.2.0",
     "react-bootstrap-table2-editor": "^1.2.2",
     "react-bootstrap-typeahead": "^3.3.4",
-    "react-dev-utils": "^7.0.3",
+    "react-dev-utils": "^11.0.4",
     "react-dom": "^16.8.2",
     "react-helmet": "^5.2.0",
     "react-icons": "^3.5.0",
